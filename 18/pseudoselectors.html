@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo selectors & more Designing</title>
-    
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: antiquewhite;
+            padding: 33px;
+            margin: 33px;
+            width: 666px;
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        a:hover{
+            color: aqua;
+            background-color: pink;
+        }
+        a:visited{
+            background-color: brown;
+          
+        }
+        a:active{
+            background-color:#b819c9;
+        }
+        .btn{
+           background-color: rgb(201, 200, 234);
+           padding: 6px;
+           margin: 6px;
+           border: none;
+           cursor: pointer;
+           font-size: 13px;
+           border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-   
+    <div class="container" id="cont1">
+        <h3>This is My Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, deleniti ullam dolorem inventore placeat unde quod nulla aperiam ex praesentium. Veniam totam asperiores quisquam blanditiis autem reiciendis, eveniet eos nulla laudantium quo, ducimus fuga cumque maxime ad mollitia consectetur. Sequi.</p>
+        <a href="https://www.google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+    </div>
 </body>
 </html>
