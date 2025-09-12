@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment </title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+   <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(250, 226, 205);
+            margin: 33px auto;
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 5px;
+            padding: 12px 5px;
+            background: rgb(248, 238, 238);
+        }
+
+        #fruit {
+            float: right;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+        p,h3{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to my Store</h2>
+        <div id="fruit" class="item">
+            <h3>This the fruit paragraph</h3>
+            <p id="fruitespara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque minus expedita, assumenda, illum quas quasi quidem eaque ab dolores recusandae consequatur natus possimus officiis, blanditiis quod reprehenderit cumque sapiente. Quis enim eos error distinctio eius, temporibus id magni iusto, delectus, officiis veniam? Quaerat sequi, laboriosam totam atque eum eos tenetur aperiam numquam esse provident sint obcaecati fuga! Minus ex numquam sed excepturi sit dolores commodi deserunt aliquid! Accusamus ex iusto quod, repudiandae, expedita facilis voluptate magnam tempora et nostrum quo cupiditate a consectetur quisquam eveniet illo. Dicta veniam asperiores rerum?
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>This the computer paragraph</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque minus expedita, assumenda, illum quas quasi quidem eaque ab dolores recusandae consequatur natus possimus officiis, blanditiis quod reprehenderit cumque sapiente. Quis enim eos error distinctio eius, temporibus id magni iusto, delectus, officiis veniam? Quaerat sequi, laboriosam totam atque eum eos tenetur aperiam numquam esse provident sint obcaecati fuga! Minus ex numquam sed excepturi sit dolores commodi deserunt aliquid! Accusamus ex iusto quod, repudiandae, expedita facilis voluptate magnam tempora et nostrum quo cupiditate a consectetur quisquam eveniet illo. Dicta veniam asperiores rerum?
+            </p>
+        </div>
+        <div id="statonary" class="item">
+            <h3>This the statonary paragraph</h3>
+            <p id="statonarypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque minus expedita, assumenda, illum quas quasi quidem eaque ab dolores recusandae consequatur natus possimus officiis, blanditiis quod reprehenderit cumque sapiente. Quis enim eos error distinctio eius, temporibus id magni iusto, delectus, officiis veniam? Quaerat sequi, laboriosam totam atque  rerum?
+            </p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>This the glasses paragraph</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque minus expedita, assumenda, illum quas quasi quidem eaque ab dolores recusandae consequatur natus possimus officiis, blanditiis quod reprehenderit cumque sapiente. Quis enim eos error distinctio eius, temporibus id magni iusto, delectus, officiis veniam? Quaerat sequi, laboriosam totam atque  rerum?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
