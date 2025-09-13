@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varables in CSS</title>
+    <title>Varables in CSS/Custom Properties</title>
     <style>
-
+        :root{
+            --primary-color:violet;
+            --danger-color: red;
+            max-width: 333px;
+        }
+        .box{
+            --box-color :rgb(232, 187, 246);
+            width: 200px;
+            height: 200px;
+            background-color:var(--primary-color);
+            padding: 30px;
+            margin:  3px 30px;
+            border: 2px solid red;
+            box-shadow: 20px 20px 30px var(--primary-color);
+        }
+        .container{
+            display:flex;
+            background-color: var(--danger-color);
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-
+        <div class="box">
+            Box1
+        </div>
+        <div class="box"> 
+            Box2
+        </div>
+        <div class="box"> 
+            Box3
+        </div>
     </div>
 </body>
+
 </html>
