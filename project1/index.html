@@ -1,35 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VARUN FITTNESS</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        img{
-            border: 2px solid black;
+        /* CSS Rest */
+        body {
+            font-family: 'Baloo Bhai', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/gym\ back.jpg');
         }
-        .center li{
-            display: none;
+
+        .left {
+            position: absolute;
+            left: 10px;
+            top: 0px;
+            display: inline-block;
+            border: 2px solid rgb(230, 107, 13);
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 0px auto;
+            border: 2px solid green;
+        }
+
+        .right {
+            position: absolute;
+            right: 10px;
+            top: 0px;
+            display: inline-block;
+            border: 2px solid red;
+        }
+
+        /* .navbar{
+            display: inline-block;
+        } */
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            border-radius: 3px;
+            color: grey;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+
+        }
+
+        img {
+            height: 60px;
+            width: 132px;
+        }
+
+        .left h2 {
+            font-size: medium;
+            text-align: center;
+            margin-top: 0%;
+        }
+
+        .btn{
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 9px;
+            color: white;
+            background-color: rgb(80, 78, 78);
+            padding: 11px 13px;
+            font-size: 17px;
+            border-radius: 15px;
+            height: 50px;
+        }
+        .container {
+            border: 2px solid rgb(241, 168, 9);
+            padding: 10px 30px 30px 30px;
+            width: 500px;
+            margin: 10px;
+            position: absolute;
+            right: 127px;
+            height: 350px;
+            top: 126px;
+        }
+        .form-group input{
+            font-family: 'Baloo Bhai', cursive;
+            font-size: 15px;
+            border: 3px solid red;
+            padding: 10px 10px;
+            width: 400px;
+            height: 10px;
+            background-color: rgb(242, 244, 246);
+            margin: 10px 10px;
+            border-radius: 8px;
+            
+        }
+        .btn:hover{
+            background-color: green;
+            color: white;
+            width: 100px;
+            margin: 3px auto;
+            cursor: pointer;
+        }
+        .container h2{
+            color: rgb(236, 233, 239);
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="img/GYM LOGO.jpg" alt="logo">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/download.png" alt="logo">
+            <h2>Varun Fitness</h2>
         </div>
-        <div class="center">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">PRODUCTS</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">CONTACT US</a></li>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">Services</a></li>
+                <li> <a href="#">Fitness Calculator</a></li>
+                <li> <a href="#">Contact us</a></li>
             </ul>
         </div>
+        <!-- right box for buttons -->
         <div class="right">
-    
+            <button class="btn">
+                Call Us
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
         </div>
     </header>
+    <div class="container">
+        <h2>Join Indias Best Gym</h2>
+        <form action="noaction.java" >
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="age" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Contact" placeholder="Enter Your Contact Number">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
 </body>
+
 </html>
