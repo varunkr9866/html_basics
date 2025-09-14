@@ -6,7 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transitions in CSS</title>
     <style>
-        
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        #box {
+            display: flex;
+            height: 150px;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            transition: font-size border-radius;
+            background-color: red;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+        }
+
+        #box:hover {
+            background-color: pink;
+            border-radius: 100px;
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+        }
     </style>
 </head>
 
