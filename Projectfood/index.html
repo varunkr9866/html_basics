@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Online Food "My Online Food"</title>
     <style>
-        nav{
+        nav {
             display: flex;
             justify-items: center;
             align-items: center;
         }
 
-        header{
+        header {
             width: 100vw;
-            height: 20vh;
+            height: 17vh;
+            BACKGROUND-COLOR: cadetblue;
+            position: fixed;
+            position-area: top;
         }
+
         #logo img {
             width: 6vw;
             height: 10vh;
@@ -29,12 +33,26 @@
         }
 
         .navigation .item {
-            border: 2px solid red;
             display: flex;
             padding: 10px;
-            margin: 10px;
+            margin: 20px;
+        }
 
+        a {
+            color: burlywood;
+            width: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            transition: background-color;
+            transition-duration: 3s;
+            text-decoration: solid;
+        }
 
+        .item a:hover {
+            color: white
+        }
+        .main-container{
+            background-image: url(/Projectfood/bg.jpg);
         }
     </style>
 </head>
@@ -61,8 +79,26 @@
                     </li>
                 </ul>
             </div>
+            <div>
+
+            </div>
         </nav>
     </header>
+    <section>
+
+        <div class="main-container">
+            <h1>
+                Welcome to My Pastry Story
+            </h1>
+            <p class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, odio reiciendis in possimus sequi
+                perspiciatis illo neque voluptates repellat mollitia nostrum error delectus labore hic adipisci iure quis
+                quas rerum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus laborum repudiandae quas modi
+                exercitationem earum dolores iure ullam nam maxime rerum, suscipit possimus ex eius reprehenderit
+                perspiciatis natus odio debitis.
+            </p>
+        </div>
+    </section>
 </body>
 
 </html>
